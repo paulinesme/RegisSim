@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telephone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaM-bM-207">
@@ -84,7 +84,7 @@
                         <viewControllerLayoutGuide type="bottom" id="yYF-QA-E9y"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9F8-zU-U8M">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="8YB-e4-svA">
@@ -94,7 +94,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sim card has been registered" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMS-7K-V83">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -103,15 +103,13 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Citizen ID : 1-1111-11111-11-1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqy-A0-sou">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejD-fE-Vse">
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="KHo-me-ehH"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SimCard" translatesAutoresizingMaskIntoConstraints="NO" id="Hye-Hn-qzg">
                                 <constraints>
@@ -125,12 +123,19 @@
                                     <constraint firstAttribute="height" constant="50" id="xeZ-F8-66e"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqy-A0-sou">
+                                <string key="text">Citizen ID : 1-1111-11111-11-1
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0039215686274509803" green="0.44705882352941173" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ejD-fE-Vse" firstAttribute="top" secondItem="kMS-7K-V83" secondAttribute="bottom" constant="135" id="7LI-b4-QIH"/>
-                            <constraint firstItem="eoO-NG-y0l" firstAttribute="top" secondItem="kMS-7K-V83" secondAttribute="bottom" constant="25" id="7ef-MQ-zzc"/>
-                            <constraint firstItem="Hye-Hn-qzg" firstAttribute="top" secondItem="8YB-e4-svA" secondAttribute="bottom" constant="15" id="8kd-AU-Vvn"/>
+                            <constraint firstItem="eoO-NG-y0l" firstAttribute="top" secondItem="kMS-7K-V83" secondAttribute="bottom" constant="20" id="7ef-MQ-zzc"/>
+                            <constraint firstItem="Hye-Hn-qzg" firstAttribute="top" secondItem="8YB-e4-svA" secondAttribute="bottom" constant="30" id="8kd-AU-Vvn"/>
                             <constraint firstItem="OaK-UQ-5OO" firstAttribute="trailing" secondItem="Hye-Hn-qzg" secondAttribute="trailing" id="H4W-or-PVw"/>
                             <constraint firstItem="eoO-NG-y0l" firstAttribute="centerX" secondItem="9F8-zU-U8M" secondAttribute="centerX" id="MAx-pu-QeE"/>
                             <constraint firstItem="ejD-fE-Vse" firstAttribute="centerX" secondItem="9F8-zU-U8M" secondAttribute="centerX" id="Nen-uA-FC0"/>
