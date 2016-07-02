@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RegisSim" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="RegisSim" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -70,15 +70,19 @@
                             <constraint firstItem="3NH-gU-0II" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vY2-86-Z10"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="citizenTextField" destination="Bdb-xa-aR3" id="42S-hM-WKu"/>
+                        <outlet property="telephoneTextField" destination="XRB-xt-5Pr" id="K4t-pc-bIL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-272" y="-74"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="oHt-b3-4ab">
             <objects>
-                <viewController id="S5Y-mv-aHS" sceneMemberID="viewController">
+                <viewController id="S5Y-mv-aHS" customClass="SecondViewController" customModule="RegisSim" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1jX-PN-RAs"/>
                         <viewControllerLayoutGuide type="bottom" id="yYF-QA-E9y"/>
@@ -149,6 +153,10 @@
                             <constraint firstItem="Bqy-A0-sou" firstAttribute="centerX" secondItem="9F8-zU-U8M" secondAttribute="centerX" id="zAj-2T-a1z"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="citizenIdLabel" destination="Bqy-A0-sou" id="U1X-qJ-IxC"/>
+                        <outlet property="telephoneLabel" destination="eoO-NG-y0l" id="K0M-1h-QHR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyf-4W-fcj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

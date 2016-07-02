@@ -14,6 +14,8 @@
 		8728A2921D27674600AF8393 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8728A2901D27674600AF8393 /* LaunchScreen.storyboard */; };
 		8728A29D1D27674600AF8393 /* RegisSimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8728A29C1D27674600AF8393 /* RegisSimTests.swift */; };
 		8728A2A81D27674600AF8393 /* RegisSimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8728A2A71D27674600AF8393 /* RegisSimUITests.swift */; };
+		87BA76AC1D27A34100FF3A86 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BA76AB1D27A34100FF3A86 /* FirstViewController.swift */; };
+		87BA76AE1D27A5B300FF3A86 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BA76AD1D27A5B300FF3A86 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		8728A2A31D27674600AF8393 /* RegisSimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegisSimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8728A2A71D27674600AF8393 /* RegisSimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisSimUITests.swift; sourceTree = "<group>"; };
 		8728A2A91D27674600AF8393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87BA76AB1D27A34100FF3A86 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		87BA76AD1D27A5B300FF3A86 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				8728A2871D27674600AF8393 /* AppDelegate.swift */,
+				87BA76AB1D27A34100FF3A86 /* FirstViewController.swift */,
+				87BA76AD1D27A5B300FF3A86 /* SecondViewController.swift */,
 				8728A2891D27674600AF8393 /* ViewController.swift */,
 				8728A28B1D27674600AF8393 /* Main.storyboard */,
 				8728A28E1D27674600AF8393 /* Assets.xcassets */,
@@ -265,6 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87BA76AE1D27A5B300FF3A86 /* SecondViewController.swift in Sources */,
+				87BA76AC1D27A34100FF3A86 /* FirstViewController.swift in Sources */,
 				8728A28A1D27674600AF8393 /* ViewController.swift in Sources */,
 				8728A2881D27674600AF8393 /* AppDelegate.swift in Sources */,
 			);
@@ -503,6 +511,7 @@
 				8728A2AE1D27674600AF8393 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8728A2AF1D27674600AF8393 /* Build configuration list for PBXNativeTarget "RegisSimTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +520,7 @@
 				8728A2B11D27674600AF8393 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8728A2B21D27674600AF8393 /* Build configuration list for PBXNativeTarget "RegisSimUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +529,7 @@
 				8728A2B41D27674600AF8393 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
