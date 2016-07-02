@@ -119,12 +119,19 @@
                                     <constraint firstAttribute="height" constant="128" id="dhX-Th-INT"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="OaK-UQ-5OO">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Zd0-5a-QO7"/>
+                                    <constraint firstAttribute="height" constant="50" id="xeZ-F8-66e"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0039215686274509803" green="0.44705882352941173" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ejD-fE-Vse" firstAttribute="top" secondItem="kMS-7K-V83" secondAttribute="bottom" constant="135" id="7LI-b4-QIH"/>
                             <constraint firstItem="eoO-NG-y0l" firstAttribute="top" secondItem="kMS-7K-V83" secondAttribute="bottom" constant="25" id="7ef-MQ-zzc"/>
                             <constraint firstItem="Hye-Hn-qzg" firstAttribute="top" secondItem="8YB-e4-svA" secondAttribute="bottom" constant="15" id="8kd-AU-Vvn"/>
+                            <constraint firstItem="OaK-UQ-5OO" firstAttribute="trailing" secondItem="Hye-Hn-qzg" secondAttribute="trailing" id="H4W-or-PVw"/>
                             <constraint firstItem="eoO-NG-y0l" firstAttribute="centerX" secondItem="9F8-zU-U8M" secondAttribute="centerX" id="MAx-pu-QeE"/>
                             <constraint firstItem="ejD-fE-Vse" firstAttribute="centerX" secondItem="9F8-zU-U8M" secondAttribute="centerX" id="Nen-uA-FC0"/>
                             <constraint firstItem="kMS-7K-V83" firstAttribute="top" secondItem="Hye-Hn-qzg" secondAttribute="bottom" constant="20" id="S5L-Kb-guX"/>
@@ -132,6 +139,7 @@
                             <constraint firstItem="8YB-e4-svA" firstAttribute="centerX" secondItem="9F8-zU-U8M" secondAttribute="centerX" id="fF9-if-fqF"/>
                             <constraint firstItem="8YB-e4-svA" firstAttribute="top" secondItem="1jX-PN-RAs" secondAttribute="bottom" constant="20" id="hRj-bX-b8D"/>
                             <constraint firstItem="Bqy-A0-sou" firstAttribute="top" secondItem="eoO-NG-y0l" secondAttribute="bottom" constant="10" id="kDm-rG-n9g"/>
+                            <constraint firstItem="OaK-UQ-5OO" firstAttribute="bottom" secondItem="Hye-Hn-qzg" secondAttribute="bottom" id="vVr-iK-ut4"/>
                             <constraint firstItem="Hye-Hn-qzg" firstAttribute="centerX" secondItem="9F8-zU-U8M" secondAttribute="centerX" id="wyO-pV-7AH"/>
                             <constraint firstItem="Bqy-A0-sou" firstAttribute="centerX" secondItem="9F8-zU-U8M" secondAttribute="centerX" id="zAj-2T-a1z"/>
                         </constraints>
@@ -145,5 +153,6 @@
     <resources>
         <image name="SimCard" width="210" height="130"/>
         <image name="appleLogo" width="37" height="21"/>
+        <image name="check" width="244" height="240"/>
     </resources>
 </document>
