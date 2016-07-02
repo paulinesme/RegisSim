@@ -18,6 +18,7 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationItem.title = "Registration"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -33,7 +34,17 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func tapOnView(_ sender: AnyObject) {
+        self.view.endEditing(true)
+    }
 
+    @IBAction func pressSubmitButton(_ sender: AnyObject) {
+        
+        if (citizenTextField.text != "" && telephoneTextField.text != "") {
+            
+            self.performSegue(withIdentifier: "registerSuccess", sender: nil)
+        }
+    }
     /*
     // MARK: - Navigation
 

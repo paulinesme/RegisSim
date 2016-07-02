@@ -20,14 +20,18 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationItem.title = "Success!"
+        
         print(telephone, ",", citizenId)
         
         if (telephone != nil) {
-            telephoneLabel.text = "Telephone : \(telephone!)"
+//            telephoneLabel.text = "Telephone : \(telephone!)"
+            telephoneLabel.text = "Telephone :" + telephone!    // Better for localization
         }
         
         if (citizenId != nil) {
-            citizenIdLabel.text = "Citizen ID : \(citizenId!)"
+//            citizenIdLabel.text = "Citizen ID : \(citizenId!)"
+            citizenIdLabel.text = "Citizen ID :" + citizenId!   // Better for localization
         }
     }
 
@@ -37,6 +41,10 @@ class SecondViewController: UIViewController {
     }
     
 
+    @IBAction func backToFirstView(_ sender: AnyObject) {
+        
+        self.navigationController?.popViewController(animated: true)
+    }
     /*
     // MARK: - Navigation
 

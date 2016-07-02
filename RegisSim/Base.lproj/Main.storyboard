@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zwF-zb-6gY">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
@@ -7,10 +7,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="Xf5-Ik-5Xl">
+            <objects>
+                <navigationController id="zwF-zb-6gY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FqC-PF-VDB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1bs-Jr-e68"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bda-Wj-RPY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1134" y="-75"/>
+        </scene>
+        <!--Regis Sim-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="RegisSim" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Regis Sim" id="BYZ-38-t0r" customClass="FirstViewController" customModule="RegisSim" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -26,7 +42,7 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XRB-xt-5Pr" userLabel="TelephoneTextfield">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Citizen ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOF-2R-G8h">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -35,7 +51,7 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bdb-xa-aR3" userLabel="CitizenTextfiled">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="oTA-bR-sX8">
                                 <constraints>
@@ -48,11 +64,12 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="S5Y-mv-aHS" kind="show" id="M7b-a8-4su"/>
+                                    <action selector="pressSubmitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WIQ-pO-cNt"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0039215686274509803" green="0.44705882352941173" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="UOF-2R-G8h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0eU-xT-5EK"/>
                             <constraint firstItem="3NH-gU-0II" firstAttribute="top" secondItem="UOF-2R-G8h" secondAttribute="bottom" constant="140" id="2y7-cw-ApI"/>
@@ -69,20 +86,30 @@
                             <constraint firstItem="Bdb-xa-aR3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="vL9-jd-Tog"/>
                             <constraint firstItem="3NH-gU-0II" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vY2-86-Z10"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fe1-rf-LQs" appends="YES" id="PfZ-aS-tOZ"/>
+                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" title="Regis Sim" id="kl2-Ma-6kU"/>
                     <connections>
                         <outlet property="citizenTextField" destination="Bdb-xa-aR3" id="42S-hM-WKu"/>
                         <outlet property="telephoneTextField" destination="XRB-xt-5Pr" id="K4t-pc-bIL"/>
+                        <segue destination="S5Y-mv-aHS" kind="show" identifier="registerSuccess" id="Iec-Vd-uF3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fe1-rf-LQs">
+                    <connections>
+                        <action selector="tapOnView:" destination="BYZ-38-t0r" id="Fy1-lQ-PeN"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-272" y="-74"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Result-->
         <scene sceneID="oHt-b3-4ab">
             <objects>
-                <viewController id="S5Y-mv-aHS" customClass="SecondViewController" customModule="RegisSim" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Result" id="S5Y-mv-aHS" customClass="SecondViewController" customModule="RegisSim" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1jX-PN-RAs"/>
                         <viewControllerLayoutGuide type="bottom" id="yYF-QA-E9y"/>
@@ -112,7 +139,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="KHo-me-ehH"/>
+                                    <action selector="backToFirstView:" destination="S5Y-mv-aHS" eventType="touchUpInside" id="SWR-Wq-Kud"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SimCard" translatesAutoresizingMaskIntoConstraints="NO" id="Hye-Hn-qzg">
