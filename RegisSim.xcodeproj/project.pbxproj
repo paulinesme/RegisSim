@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8728A2881D27674600AF8393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8728A2871D27674600AF8393 /* AppDelegate.swift */; };
+		8728A28A1D27674600AF8393 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8728A2891D27674600AF8393 /* ViewController.swift */; };
+		8728A28D1D27674600AF8393 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8728A28B1D27674600AF8393 /* Main.storyboard */; };
+		8728A28F1D27674600AF8393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8728A28E1D27674600AF8393 /* Assets.xcassets */; };
+		8728A2921D27674600AF8393 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8728A2901D27674600AF8393 /* LaunchScreen.storyboard */; };
+		8728A29D1D27674600AF8393 /* RegisSimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8728A29C1D27674600AF8393 /* RegisSimTests.swift */; };
+		8728A2A81D27674600AF8393 /* RegisSimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8728A2A71D27674600AF8393 /* RegisSimUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8728A2991D27674600AF8393 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8728A27C1D27674600AF8393 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8728A2831D27674600AF8393;
+			remoteInfo = RegisSim;
+		};
+		8728A2A41D27674600AF8393 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8728A27C1D27674600AF8393 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8728A2831D27674600AF8393;
+			remoteInfo = RegisSim;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8728A2841D27674600AF8393 /* RegisSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegisSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8728A2871D27674600AF8393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8728A2891D27674600AF8393 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8728A28C1D27674600AF8393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8728A28E1D27674600AF8393 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8728A2911D27674600AF8393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8728A2931D27674600AF8393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8728A2981D27674600AF8393 /* RegisSimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegisSimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8728A29C1D27674600AF8393 /* RegisSimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisSimTests.swift; sourceTree = "<group>"; };
+		8728A29E1D27674600AF8393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8728A2A31D27674600AF8393 /* RegisSimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegisSimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8728A2A71D27674600AF8393 /* RegisSimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisSimUITests.swift; sourceTree = "<group>"; };
+		8728A2A91D27674600AF8393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8728A2811D27674600AF8393 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8728A2951D27674600AF8393 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8728A2A01D27674600AF8393 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8728A27B1D27674600AF8393 = {
+			isa = PBXGroup;
+			children = (
+				8728A2861D27674600AF8393 /* RegisSim */,
+				8728A29B1D27674600AF8393 /* RegisSimTests */,
+				8728A2A61D27674600AF8393 /* RegisSimUITests */,
+				8728A2851D27674600AF8393 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8728A2851D27674600AF8393 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8728A2841D27674600AF8393 /* RegisSim.app */,
+				8728A2981D27674600AF8393 /* RegisSimTests.xctest */,
+				8728A2A31D27674600AF8393 /* RegisSimUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8728A2861D27674600AF8393 /* RegisSim */ = {
+			isa = PBXGroup;
+			children = (
+				8728A2871D27674600AF8393 /* AppDelegate.swift */,
+				8728A2891D27674600AF8393 /* ViewController.swift */,
+				8728A28B1D27674600AF8393 /* Main.storyboard */,
+				8728A28E1D27674600AF8393 /* Assets.xcassets */,
+				8728A2901D27674600AF8393 /* LaunchScreen.storyboard */,
+				8728A2931D27674600AF8393 /* Info.plist */,
+			);
+			path = RegisSim;
+			sourceTree = "<group>";
+		};
+		8728A29B1D27674600AF8393 /* RegisSimTests */ = {
+			isa = PBXGroup;
+			children = (
+				8728A29C1D27674600AF8393 /* RegisSimTests.swift */,
+				8728A29E1D27674600AF8393 /* Info.plist */,
+			);
+			path = RegisSimTests;
+			sourceTree = "<group>";
+		};
+		8728A2A61D27674600AF8393 /* RegisSimUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8728A2A71D27674600AF8393 /* RegisSimUITests.swift */,
+				8728A2A91D27674600AF8393 /* Info.plist */,
+			);
+			path = RegisSimUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8728A2831D27674600AF8393 /* RegisSim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8728A2AC1D27674600AF8393 /* Build configuration list for PBXNativeTarget "RegisSim" */;
+			buildPhases = (
+				8728A2801D27674600AF8393 /* Sources */,
+				8728A2811D27674600AF8393 /* Frameworks */,
+				8728A2821D27674600AF8393 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RegisSim;
+			productName = RegisSim;
+			productReference = 8728A2841D27674600AF8393 /* RegisSim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8728A2971D27674600AF8393 /* RegisSimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8728A2AF1D27674600AF8393 /* Build configuration list for PBXNativeTarget "RegisSimTests" */;
+			buildPhases = (
+				8728A2941D27674600AF8393 /* Sources */,
+				8728A2951D27674600AF8393 /* Frameworks */,
+				8728A2961D27674600AF8393 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8728A29A1D27674600AF8393 /* PBXTargetDependency */,
+			);
+			name = RegisSimTests;
+			productName = RegisSimTests;
+			productReference = 8728A2981D27674600AF8393 /* RegisSimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8728A2A21D27674600AF8393 /* RegisSimUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8728A2B21D27674600AF8393 /* Build configuration list for PBXNativeTarget "RegisSimUITests" */;
+			buildPhases = (
+				8728A29F1D27674600AF8393 /* Sources */,
+				8728A2A01D27674600AF8393 /* Frameworks */,
+				8728A2A11D27674600AF8393 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8728A2A51D27674600AF8393 /* PBXTargetDependency */,
+			);
+			name = RegisSimUITests;
+			productName = RegisSimUITests;
+			productReference = 8728A2A31D27674600AF8393 /* RegisSimUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8728A27C1D27674600AF8393 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Pauline Sihawong";
+				TargetAttributes = {
+					8728A2831D27674600AF8393 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = EWNH6FF9CF;
+						DevelopmentTeamName = "MyPay Co. Ltd.";
+						ProvisioningStyle = Automatic;
+					};
+					8728A2971D27674600AF8393 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = EWNH6FF9CF;
+						DevelopmentTeamName = "MyPay Co. Ltd.";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8728A2831D27674600AF8393;
+					};
+					8728A2A21D27674600AF8393 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = EWNH6FF9CF;
+						DevelopmentTeamName = "MyPay Co. Ltd.";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8728A2831D27674600AF8393;
+					};
+				};
+			};
+			buildConfigurationList = 8728A27F1D27674600AF8393 /* Build configuration list for PBXProject "RegisSim" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8728A27B1D27674600AF8393;
+			productRefGroup = 8728A2851D27674600AF8393 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8728A2831D27674600AF8393 /* RegisSim */,
+				8728A2971D27674600AF8393 /* RegisSimTests */,
+				8728A2A21D27674600AF8393 /* RegisSimUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8728A2821D27674600AF8393 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8728A2921D27674600AF8393 /* LaunchScreen.storyboard in Resources */,
+				8728A28F1D27674600AF8393 /* Assets.xcassets in Resources */,
+				8728A28D1D27674600AF8393 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8728A2961D27674600AF8393 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8728A2A11D27674600AF8393 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8728A2801D27674600AF8393 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8728A28A1D27674600AF8393 /* ViewController.swift in Sources */,
+				8728A2881D27674600AF8393 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8728A2941D27674600AF8393 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8728A29D1D27674600AF8393 /* RegisSimTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8728A29F1D27674600AF8393 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8728A2A81D27674600AF8393 /* RegisSimUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8728A29A1D27674600AF8393 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8728A2831D27674600AF8393 /* RegisSim */;
+			targetProxy = 8728A2991D27674600AF8393 /* PBXContainerItemProxy */;
+		};
+		8728A2A51D27674600AF8393 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8728A2831D27674600AF8393 /* RegisSim */;
+			targetProxy = 8728A2A41D27674600AF8393 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8728A28B1D27674600AF8393 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8728A28C1D27674600AF8393 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8728A2901D27674600AF8393 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8728A2911D27674600AF8393 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8728A2AA1D27674600AF8393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8728A2AB1D27674600AF8393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8728A2AD1D27674600AF8393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RegisSim/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prontoTraining.RegisSim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8728A2AE1D27674600AF8393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RegisSim/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prontoTraining.RegisSim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8728A2B01D27674600AF8393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RegisSimTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prontoTraining.RegisSimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RegisSim.app/RegisSim";
+			};
+			name = Debug;
+		};
+		8728A2B11D27674600AF8393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RegisSimTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prontoTraining.RegisSimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RegisSim.app/RegisSim";
+			};
+			name = Release;
+		};
+		8728A2B31D27674600AF8393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RegisSimUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prontoTraining.RegisSimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RegisSim;
+			};
+			name = Debug;
+		};
+		8728A2B41D27674600AF8393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RegisSimUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prontoTraining.RegisSimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RegisSim;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8728A27F1D27674600AF8393 /* Build configuration list for PBXProject "RegisSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8728A2AA1D27674600AF8393 /* Debug */,
+				8728A2AB1D27674600AF8393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8728A2AC1D27674600AF8393 /* Build configuration list for PBXNativeTarget "RegisSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8728A2AD1D27674600AF8393 /* Debug */,
+				8728A2AE1D27674600AF8393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8728A2AF1D27674600AF8393 /* Build configuration list for PBXNativeTarget "RegisSimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8728A2B01D27674600AF8393 /* Debug */,
+				8728A2B11D27674600AF8393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8728A2B21D27674600AF8393 /* Build configuration list for PBXNativeTarget "RegisSimUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8728A2B31D27674600AF8393 /* Debug */,
+				8728A2B41D27674600AF8393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8728A27C1D27674600AF8393 /* Project object */;
+}
