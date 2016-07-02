@@ -1,26 +1,149 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RegisSim" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telephone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaM-bM-207">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XRB-xt-5Pr" userLabel="TelephoneTextfield">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Citizen ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOF-2R-G8h">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bdb-xa-aR3" userLabel="CitizenTextfiled">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="oTA-bR-sX8">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="J8J-WI-lc6"/>
+                                    <constraint firstAttribute="width" constant="100" id="nV7-yH-DjK"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NH-gU-0II">
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="S5Y-mv-aHS" kind="show" id="M7b-a8-4su"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.44705882352941173" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="UOF-2R-G8h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0eU-xT-5EK"/>
+                            <constraint firstItem="3NH-gU-0II" firstAttribute="top" secondItem="UOF-2R-G8h" secondAttribute="bottom" constant="140" id="2y7-cw-ApI"/>
+                            <constraint firstItem="XRB-xt-5Pr" firstAttribute="top" secondItem="xaM-bM-207" secondAttribute="bottom" constant="16" id="3Mh-A3-J7B"/>
+                            <constraint firstItem="UOF-2R-G8h" firstAttribute="top" secondItem="xaM-bM-207" secondAttribute="bottom" constant="60" id="8uW-Z2-dwr"/>
+                            <constraint firstItem="xaM-bM-207" firstAttribute="top" secondItem="oTA-bR-sX8" secondAttribute="bottom" constant="27" id="COq-IS-JW3"/>
+                            <constraint firstItem="Bdb-xa-aR3" firstAttribute="top" secondItem="UOF-2R-G8h" secondAttribute="bottom" constant="16" id="CYQ-uo-NtN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bdb-xa-aR3" secondAttribute="trailing" constant="16" id="Fmy-NK-7gf"/>
+                            <constraint firstItem="XRB-xt-5Pr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="LTK-X7-jC6"/>
+                            <constraint firstItem="oTA-bR-sX8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MCQ-2W-ylO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XRB-xt-5Pr" secondAttribute="trailing" constant="16" id="ZtL-Ru-Cs6"/>
+                            <constraint firstItem="xaM-bM-207" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aCk-G8-IAK"/>
+                            <constraint firstItem="oTA-bR-sX8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="rEg-ig-zVI"/>
+                            <constraint firstItem="Bdb-xa-aR3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="vL9-jd-Tog"/>
+                            <constraint firstItem="3NH-gU-0II" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vY2-86-Z10"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-272" y="-74"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oHt-b3-4ab">
+            <objects>
+                <viewController id="S5Y-mv-aHS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1jX-PN-RAs"/>
+                        <viewControllerLayoutGuide type="bottom" id="yYF-QA-E9y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9F8-zU-U8M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="8YB-e4-svA">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="eys-5x-KV4"/>
+                                    <constraint firstAttribute="height" constant="50" id="tif-2M-yCz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sim card has been registered" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMS-7K-V83">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telephone : 080-000-0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoO-NG-y0l">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Citizen ID : 1-1111-11111-11-1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqy-A0-sou">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejD-fE-Vse">
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SimCard" translatesAutoresizingMaskIntoConstraints="NO" id="Hye-Hn-qzg">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Ga4-mh-6Pa"/>
+                                    <constraint firstAttribute="height" constant="128" id="dhX-Th-INT"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.44705882352941173" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ejD-fE-Vse" firstAttribute="top" secondItem="kMS-7K-V83" secondAttribute="bottom" constant="135" id="7LI-b4-QIH"/>
+                            <constraint firstItem="eoO-NG-y0l" firstAttribute="top" secondItem="kMS-7K-V83" secondAttribute="bottom" constant="25" id="7ef-MQ-zzc"/>
+                            <constraint firstItem="Hye-Hn-qzg" firstAttribute="top" secondItem="8YB-e4-svA" secondAttribute="bottom" constant="15" id="8kd-AU-Vvn"/>
+                            <constraint firstItem="eoO-NG-y0l" firstAttribute="centerX" secondItem="9F8-zU-U8M" secondAttribute="centerX" id="MAx-pu-QeE"/>
+                            <constraint firstItem="ejD-fE-Vse" firstAttribute="centerX" secondItem="9F8-zU-U8M" secondAttribute="centerX" id="Nen-uA-FC0"/>
+                            <constraint firstItem="kMS-7K-V83" firstAttribute="top" secondItem="Hye-Hn-qzg" secondAttribute="bottom" constant="20" id="S5L-Kb-guX"/>
+                            <constraint firstItem="kMS-7K-V83" firstAttribute="centerX" secondItem="9F8-zU-U8M" secondAttribute="centerX" id="c1Z-Dp-UM9"/>
+                            <constraint firstItem="8YB-e4-svA" firstAttribute="centerX" secondItem="9F8-zU-U8M" secondAttribute="centerX" id="fF9-if-fqF"/>
+                            <constraint firstItem="8YB-e4-svA" firstAttribute="top" secondItem="1jX-PN-RAs" secondAttribute="bottom" constant="20" id="hRj-bX-b8D"/>
+                            <constraint firstItem="Bqy-A0-sou" firstAttribute="top" secondItem="eoO-NG-y0l" secondAttribute="bottom" constant="10" id="kDm-rG-n9g"/>
+                            <constraint firstItem="Hye-Hn-qzg" firstAttribute="centerX" secondItem="9F8-zU-U8M" secondAttribute="centerX" id="wyO-pV-7AH"/>
+                            <constraint firstItem="Bqy-A0-sou" firstAttribute="centerX" secondItem="9F8-zU-U8M" secondAttribute="centerX" id="zAj-2T-a1z"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eyf-4W-fcj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="531.8840579710145" y="-74.184782608695656"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SimCard" width="210" height="130"/>
+        <image name="appleLogo" width="37" height="21"/>
+    </resources>
 </document>
