@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RegisSim/ListViewController.swift"
-            timestampString = "489225049.750261"
+            timestampString = "489227610.837371"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "unwindToList(segue:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,12 +26,92 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RegisSim/ListViewController.swift"
-            timestampString = "489225049.750261"
+            timestampString = "489227610.837371"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "fetchData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RegisSim/FirstViewController.swift"
+            timestampString = "489227648.305298"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "postData(citizenId:telephone:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RegisSim/FirstViewController.swift"
+            timestampString = "489227977.022325"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "pressSubmitButton(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RegisSim.FirstViewController.pressSubmitButton (Swift.AnyObject) -&gt; ()"
+                  moduleName = "RegisSim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/PoyMacbookPro/Desktop/Development/RegisSim/RegisSim/FirstViewController.swift"
+                  timestampString = "489227984.044998"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "1119">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RegisSim.FirstViewController.(pressSubmitButton (Swift.AnyObject) -&gt; ()).(closure #1)"
+                  moduleName = "RegisSim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/PoyMacbookPro/Desktop/Development/RegisSim/RegisSim/FirstViewController.swift"
+                  timestampString = "489227984.046935"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RegisSim/FirstViewController.swift"
+            timestampString = "489228010.259626"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "pressSubmitButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

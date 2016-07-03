@@ -19,7 +19,10 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-       fetchData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        fetchData()
     }
     
     // MARK: - Utility
@@ -31,6 +34,10 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
             do {
                 if let jsonObject = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? [String: [String: String]] {
                     
+                    // Reset data everytime
+                    self.prettyNumber = []
+                    
+                    // Add data in prettyNumber
                     for (key, value) in jsonObject {
                         print(key)
                         print(value)
