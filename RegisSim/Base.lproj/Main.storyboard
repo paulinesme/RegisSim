@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sJI-ym-Cze">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H6j-am-EBH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
@@ -8,20 +8,20 @@
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
-        <scene sceneID="Xf5-Ik-5Xl">
+        <scene sceneID="yRw-Hz-mes">
             <objects>
-                <navigationController id="zwF-zb-6gY" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FqC-PF-VDB">
+                <navigationController id="H6j-am-EBH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qaf-VX-lRR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1bs-Jr-e68"/>
+                        <segue destination="sJI-ym-Cze" kind="relationship" relationship="rootViewController" id="Beb-Ed-uC3"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bda-Wj-RPY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YuV-Uv-HnA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1134" y="-75"/>
+            <point key="canvasLocation" x="-2074" y="251"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="eld-HI-ouh">
@@ -39,7 +39,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" id="Vbc-wT-tom" customClass="RegistedSimTableViewCell" customModule="RegisSim" customModuleProvider="target">
-                                        <frame key="frameInset" minY="28" width="375" height="44"/>
+                                        <frame key="frameInset" minY="92" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vbc-wT-tom" id="Uuc-jY-Gw2">
                                             <frame key="frameInset" width="375" height="43"/>
@@ -91,16 +91,23 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="bF0-qM-wkv" firstAttribute="top" secondItem="EI1-Yb-sBI" secondAttribute="bottom" id="17c-0x-9MO"/>
-                            <constraint firstItem="EI1-Yb-sBI" firstAttribute="top" secondItem="iQl-Es-6yr" secondAttribute="bottom" id="9Db-TT-km5"/>
                             <constraint firstItem="EI1-Yb-sBI" firstAttribute="leading" secondItem="Isp-l4-RaJ" secondAttribute="leading" id="bW6-3d-4Yi"/>
                             <constraint firstAttribute="trailing" secondItem="EI1-Yb-sBI" secondAttribute="trailing" id="e0r-MI-UVj"/>
+                            <constraint firstItem="EI1-Yb-sBI" firstAttribute="top" secondItem="iQl-Es-6yr" secondAttribute="bottom" id="nLZ-0P-bWK"/>
+                            <constraint firstItem="bF0-qM-wkv" firstAttribute="top" secondItem="EI1-Yb-sBI" secondAttribute="bottom" id="pZE-gr-be9"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="teS-rA-gGJ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="e97-UN-fWk">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="ahy-2B-iss"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qm7-BE-1nL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-708" y="710.19490254872574"/>
+            <point key="canvasLocation" x="-1194.4000000000001" y="250.52473763118442"/>
         </scene>
         <!--Regis Sim-->
         <scene sceneID="tne-QT-ifu">
@@ -218,7 +225,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="backToFirstView:" destination="S5Y-mv-aHS" eventType="touchUpInside" id="SWR-Wq-Kud"/>
+                                    <segue destination="kgY-9Q-YVw" kind="unwind" unwindAction="unwindToListWithSegue:" id="L0k-PL-85R"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SimCard" translatesAutoresizingMaskIntoConstraints="NO" id="Hye-Hn-qzg">
@@ -265,6 +272,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyf-4W-fcj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="kgY-9Q-YVw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="531.8840579710145" y="-74.184782608695656"/>
         </scene>

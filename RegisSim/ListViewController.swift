@@ -60,6 +60,12 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         print("Select row \(indexPath)")
     }
 
+    // MARK: - Exit binding must start the name with "unwind
+    @IBAction func unwindToList(segue: UIStoryboardSegue) {
+        
+        print(segue)
+    }
+    
     /*
     // MARK: - Navigation
 
