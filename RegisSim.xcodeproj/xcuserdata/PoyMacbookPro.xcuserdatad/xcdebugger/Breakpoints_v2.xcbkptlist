@@ -10,28 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RegisSim/ListViewController.swift"
-            timestampString = "489227610.837371"
+            timestampString = "489229986.43688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "unwindToList(segue:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RegisSim/ListViewController.swift"
-            timestampString = "489227610.837371"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "fetchData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,7 +58,7 @@
                   moduleName = "RegisSim"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/PoyMacbookPro/Desktop/Development/RegisSim/RegisSim/FirstViewController.swift"
-                  timestampString = "489227984.044998"
+                  timestampString = "489229986.583906"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "69"
@@ -89,7 +73,7 @@
                   moduleName = "RegisSim"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/PoyMacbookPro/Desktop/Development/RegisSim/RegisSim/FirstViewController.swift"
-                  timestampString = "489227984.046935"
+                  timestampString = "489229986.589179"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "71"

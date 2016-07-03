@@ -19,6 +19,9 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        tableView.refreshControl = UIRefreshControl()
+        tableView.refreshControl?.addTarget(self, action: #selector(fetchData), for: UIControlEvents.valueChanged)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,6 +35,9 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let task = session.dataTask(with: URL(string: "https://ios-practice-11d74.firebaseio.com/record.json")!) { (data, response, error) in
             do {
+                // Stop refresh control
+                self.tableView.refreshControl?.endRefreshing()
+                
                 if let jsonObject = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? [String: [String: String]] {
                     
                     // Reset data everytime
