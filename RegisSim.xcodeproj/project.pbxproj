@@ -16,6 +16,8 @@
 		87BA76AC1D27A34100FF3A86 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BA76AB1D27A34100FF3A86 /* FirstViewController.swift */; };
 		87BA76AE1D27A5B300FF3A86 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BA76AD1D27A5B300FF3A86 /* SecondViewController.swift */; };
 		87BA76B11D27B11C00FF3A86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87BA76AF1D27B11C00FF3A86 /* Main.storyboard */; };
+		87BA76B31D28B35F00FF3A86 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BA76B21D28B35F00FF3A86 /* ListViewController.swift */; };
+		87BA76B51D28C3CD00FF3A86 /* RegistedSim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BA76B41D28C3CD00FF3A86 /* RegistedSim.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		87BA76AB1D27A34100FF3A86 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		87BA76AD1D27A5B300FF3A86 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		87BA76B01D27B11C00FF3A86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87BA76B21D28B35F00FF3A86 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		87BA76B41D28C3CD00FF3A86 /* RegistedSim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistedSim.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +105,11 @@
 		8728A2861D27674600AF8393 /* RegisSim */ = {
 			isa = PBXGroup;
 			children = (
+				87BA76B61D28C3E200FF3A86 /* Model */,
 				8728A2871D27674600AF8393 /* AppDelegate.swift */,
 				87BA76AB1D27A34100FF3A86 /* FirstViewController.swift */,
 				87BA76AD1D27A5B300FF3A86 /* SecondViewController.swift */,
+				87BA76B21D28B35F00FF3A86 /* ListViewController.swift */,
 				8728A2891D27674600AF8393 /* ViewController.swift */,
 				87BA76AF1D27B11C00FF3A86 /* Main.storyboard */,
 				8728A28E1D27674600AF8393 /* Assets.xcassets */,
@@ -129,6 +135,14 @@
 				8728A2A91D27674600AF8393 /* Info.plist */,
 			);
 			path = RegisSimUITests;
+			sourceTree = "<group>";
+		};
+		87BA76B61D28C3E200FF3A86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				87BA76B41D28C3CD00FF3A86 /* RegistedSim.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +287,9 @@
 			files = (
 				87BA76AE1D27A5B300FF3A86 /* SecondViewController.swift in Sources */,
 				87BA76AC1D27A34100FF3A86 /* FirstViewController.swift in Sources */,
+				87BA76B51D28C3CD00FF3A86 /* RegistedSim.swift in Sources */,
 				8728A28A1D27674600AF8393 /* ViewController.swift in Sources */,
+				87BA76B31D28B35F00FF3A86 /* ListViewController.swift in Sources */,
 				8728A2881D27674600AF8393 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
