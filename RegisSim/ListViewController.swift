@@ -35,14 +35,20 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         cell = tableView.dequeueReusableCell(withIdentifier: "tableCell")   // Always return, even if cell not exist then automatically created new one?
 
-        let phoneLabel = cell.viewWithTag(1) as? UILabel
-        let citizenIdLabel = cell.viewWithTag(2) as? UILabel
+        if let registedCell = cell as? RegistedSimTableViewCell {
+            registedCell.phoneLabel.text = prettyNumber[indexPath.row].phoneNumber
+            registedCell.citizenIdLabel.text = prettyNumber[indexPath.row].citizenId
+        }
         
-        phoneLabel?.text = prettyNumber[indexPath.row].phoneNumber
-        citizenIdLabel?.text = prettyNumber[indexPath.row].citizenId
+//        let phoneLabel = cell.viewWithTag(1) as? UILabel
+//        let citizenIdLabel = cell.viewWithTag(2) as? UILabel
+//        
+//        phoneLabel?.text = prettyNumber[indexPath.row].phoneNumber
+//        citizenIdLabel?.text = prettyNumber[indexPath.row].citizenId
         
 //        cell.textLabel?.text = prettyNumber[indexPath.row].phoneNumber
 //        cell.detailTextLabel?.text = prettyNumber[indexPath.row].citizenId
+        
 //        let prettyCount = prettyNumber.count
 //        cell.textLabel?.text = prettyNumber[indexPath.row % prettyCount]
         

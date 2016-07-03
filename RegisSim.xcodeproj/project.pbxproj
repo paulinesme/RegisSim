@@ -18,6 +18,7 @@
 		87BA76B11D27B11C00FF3A86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87BA76AF1D27B11C00FF3A86 /* Main.storyboard */; };
 		87BA76B31D28B35F00FF3A86 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BA76B21D28B35F00FF3A86 /* ListViewController.swift */; };
 		87BA76B51D28C3CD00FF3A86 /* RegistedSim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BA76B41D28C3CD00FF3A86 /* RegistedSim.swift */; };
+		87BA76B81D28CB0500FF3A86 /* RegistedSimTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BA76B71D28CB0500FF3A86 /* RegistedSimTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		87BA76B01D27B11C00FF3A86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87BA76B21D28B35F00FF3A86 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		87BA76B41D28C3CD00FF3A86 /* RegistedSim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistedSim.swift; sourceTree = "<group>"; };
+		87BA76B71D28CB0500FF3A86 /* RegistedSimTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistedSimTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				8728A28E1D27674600AF8393 /* Assets.xcassets */,
 				8728A2901D27674600AF8393 /* LaunchScreen.storyboard */,
 				8728A2931D27674600AF8393 /* Info.plist */,
+				87BA76B71D28CB0500FF3A86 /* RegistedSimTableViewCell.swift */,
 			);
 			path = RegisSim;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				87BA76B51D28C3CD00FF3A86 /* RegistedSim.swift in Sources */,
 				8728A28A1D27674600AF8393 /* ViewController.swift in Sources */,
 				87BA76B31D28B35F00FF3A86 /* ListViewController.swift in Sources */,
+				87BA76B81D28CB0500FF3A86 /* RegistedSimTableViewCell.swift in Sources */,
 				8728A2881D27674600AF8393 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
