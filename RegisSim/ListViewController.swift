@@ -10,6 +10,7 @@ import UIKit
 
 class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var tableView: UITableView!
     var prettyNumber = [RegistedSim(phoneNumber: "0929928432", citizenId: "11111"),
                         RegistedSim(phoneNumber: "0813930764", citizenId: "22222"),
                         RegistedSim(phoneNumber: "0800000000", citizenId: "33333")]
@@ -18,6 +19,41 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+       fetchData()
+    }
+    
+    // MARK: - Utility
+    func fetchData() {
+        let session = URLSession(configuration: URLSessionConfiguration.default())
+//        session.dataTask(with: URL(string: "https://ios-practice-11d74.firebaseio.com/record.json")!)
+        
+        let task = session.dataTask(with: URL(string: "https://ios-practice-11d74.firebaseio.com/record.json")!) { (data, response, error) in
+            do {
+                if let jsonObject = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? [String: [String: String]] {
+                    
+                    for (key, value) in jsonObject {
+                        print(key)
+                        print(value)
+                        
+                        self.prettyNumber += [RegistedSim(phoneNumber: value["telephone"]!, citizenId: value["citizenId"]!)]
+                    }
+                    
+                    DispatchQueue.main.async(execute: {
+                        // Reload TableView
+                        self.tableView.reloadData()
+                    })
+                    
+                }
+                
+            } catch {
+                print("error serialize")
+            }
+            
+//            print(response)
+//            print(error)
+        }
+        
+        task.resume()   // ถ้าเราไม่เรียก code บรรทัดนี้ service ก้อยังไม่ถูกยิง
     }
 
     override func didReceiveMemoryWarning() {
